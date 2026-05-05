@@ -76,14 +76,14 @@ export function ScreeningsPage() {
 
                   return (
                     <tr key={response.id}>
-                      <td>{response.personName}</td>
-                      <td>{response.serviceName}</td>
-                      <td>{response.date}</td>
-                      <td>{response.classification}</td>
-                      <td>
+                      <td data-label="Nome">{response.personName}</td>
+                      <td data-label="Serviço">{response.serviceName}</td>
+                      <td data-label="Data">{response.date}</td>
+                      <td data-label="Classificação">{response.classification}</td>
+                      <td data-label="Risco">
                         <StatusBadge label={risk.label} tone={risk.tone} />
                       </td>
-                      <td>
+                      <td data-label="Ações">
                         <Button size="sm" variant="secondary">Analisar</Button>
                       </td>
                     </tr>
@@ -97,4 +97,3 @@ export function ScreeningsPage() {
     </div>
   );
 }
-

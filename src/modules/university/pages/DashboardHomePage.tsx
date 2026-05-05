@@ -113,11 +113,11 @@ export function DashboardHomePage() {
 
                   return (
                     <tr key={request.id}>
-                      <td>{request.personName}</td>
-                      <td>{request.serviceName}</td>
-                      <td>{request.date}</td>
-                      <td>{request.district}</td>
-                      <td>
+                      <td data-label="Nome">{request.personName}</td>
+                      <td data-label="Serviço">{request.serviceName}</td>
+                      <td data-label="Data">{request.date}</td>
+                      <td data-label="Bairro">{request.district}</td>
+                      <td data-label="Status">
                         <StatusBadge label={status.label} tone={status.tone} />
                       </td>
                     </tr>
@@ -131,4 +131,3 @@ export function DashboardHomePage() {
     </div>
   );
 }
-

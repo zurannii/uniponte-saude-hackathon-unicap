@@ -56,15 +56,15 @@ export function VacanciesPage() {
 
                   return (
                     <tr key={vacancy.serviceName}>
-                      <td>{vacancy.serviceName}</td>
-                      <td>{vacancy.openSlots}</td>
-                      <td>{vacancy.enrolled}</td>
-                      <td>{vacancy.pendingScreenings}</td>
-                      <td>{vacancy.waitlist}</td>
-                      <td>
+                      <td data-label="Serviço">{vacancy.serviceName}</td>
+                      <td data-label="Vagas abertas">{vacancy.openSlots}</td>
+                      <td data-label="Inscritos">{vacancy.enrolled}</td>
+                      <td data-label="Triagens pendentes">{vacancy.pendingScreenings}</td>
+                      <td data-label="Lista de espera">{vacancy.waitlist}</td>
+                      <td data-label="Status">
                         <StatusBadge label={status.label} tone={status.tone} />
                       </td>
-                      <td>
+                      <td data-label="Ações">
                         <div className="data-table__actions">
                           <Button size="sm" variant="secondary">
                             <Plus size={16} />
@@ -91,4 +91,3 @@ export function VacanciesPage() {
     </div>
   );
 }
-

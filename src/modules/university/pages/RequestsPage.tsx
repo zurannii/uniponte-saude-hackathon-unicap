@@ -76,15 +76,15 @@ export function RequestsPage() {
 
                   return (
                     <tr key={request.id}>
-                      <td>{request.personName}</td>
-                      <td>{request.serviceName}</td>
-                      <td>{request.date}</td>
-                      <td>{request.district}</td>
-                      <td>
+                      <td data-label="Nome">{request.personName}</td>
+                      <td data-label="Serviço solicitado">{request.serviceName}</td>
+                      <td data-label="Data">{request.date}</td>
+                      <td data-label="Bairro/Cidade">{request.district}</td>
+                      <td data-label="Status">
                         <StatusBadge label={status.label} tone={status.tone} />
                       </td>
-                      <td>{request.screeningResult}</td>
-                      <td>
+                      <td data-label="Resultado da triagem">{request.screeningResult}</td>
+                      <td data-label="Ações">
                         <Button size="sm" variant="secondary">Ver detalhes</Button>
                       </td>
                     </tr>
@@ -98,4 +98,3 @@ export function RequestsPage() {
     </div>
   );
 }
-
