@@ -1,0 +1,158 @@
+import { CommunityService } from "../types";
+
+export const communityServices: CommunityService[] = [
+  {
+    id: 1,
+    slug: "psicologia-adulto-ufpe",
+    name: "Atendimento Psicológico Adulto",
+    university: "Universidade Federal de Pernambuco",
+    area: "Psicologia",
+    costLabel: "Gratuito",
+    costType: "free",
+    status: "open",
+    city: "Recife",
+    state: "PE",
+    location: "Av. Prof. Moraes Rego, 1235 - Cidade Universitária, Recife - PE",
+    modality: "Presencial",
+    shortDescription:
+      "Atendimento psicológico supervisionado para adultos acima de 18 anos.",
+    description:
+      "Atendimento psicológico supervisionado por estudantes de graduação em Psicologia sob coordenação de professores da UFPE. O serviço é voltado para adultos que buscam acompanhamento terapêutico contínuo em um ambiente acadêmico supervisionado.",
+    audience: "Adultos acima de 18 anos",
+    criteria: [
+      "Ter mais de 18 anos",
+      "Residir em Recife ou Região Metropolitana",
+      "Disponibilidade para atendimento semanal",
+      "Aceitar atendimento supervisionado por estudantes",
+    ],
+    exclusions: [
+      "Casos de urgência ou emergência psiquiátrica",
+      "Pessoas em tratamento psiquiátrico ativo sem encaminhamento médico",
+      "Menores de 18 anos",
+    ],
+    documents: ["RG ou CPF", "Comprovante de residência", "Encaminhamento médico, se houver"],
+    schedule: "Segundas, quartas e sextas-feiras, das 14h às 18h",
+    vacanciesLabel: "20 vagas disponíveis",
+  },
+  {
+    id: 2,
+    slug: "odontologia-social-ufpe",
+    name: "Odontologia - Limpeza e Restauração",
+    university: "UFPE - Campus Recife",
+    area: "Odontologia",
+    costLabel: "Taxa social R$ 20",
+    costType: "social-fee",
+    status: "waitlist",
+    city: "Recife",
+    state: "PE",
+    location: "Clínica Odontológica Universitária - Recife - PE",
+    modality: "Presencial",
+    shortDescription:
+      "Serviços odontológicos básicos com taxa social acessível.",
+    description:
+      "Fluxo de triagem para limpeza, restauração e orientações preventivas realizado em clínica-escola com supervisão docente.",
+    audience: "Adolescentes e adultos",
+    criteria: [
+      "Disponibilidade para comparecer às triagens presenciais",
+      "Compromisso com retornos clínicos conforme plano definido",
+    ],
+    exclusions: [
+      "Atendimentos de urgência odontológica imediata",
+      "Casos cirúrgicos complexos sem avaliação prévia",
+    ],
+    documents: ["Documento com foto", "CPF", "Cartão do SUS, se possuir"],
+    schedule: "Triagens às terças e quintas, no turno da manhã",
+    vacanciesLabel: "Fila de espera ativa",
+  },
+  {
+    id: 3,
+    slug: "fisioterapia-ortopedica-upe",
+    name: "Fisioterapia Ortopédica",
+    university: "Universidade de Pernambuco",
+    area: "Fisioterapia",
+    costLabel: "Gratuito",
+    costType: "free",
+    status: "open",
+    city: "Recife",
+    state: "PE",
+    location: "Laboratório Escola de Fisioterapia - Recife - PE",
+    modality: "Híbrido",
+    shortDescription:
+      "Reabilitação musculoesquelética supervisionada.",
+    description:
+      "Atendimento focado em reabilitação funcional, dor crônica e recuperação musculoesquelética, com parte do acompanhamento educativo em formato híbrido.",
+    audience: "Jovens, adultos e idosos",
+    criteria: [
+      "Apresentar queixa ortopédica ou encaminhamento fisioterapêutico",
+      "Conseguir comparecer às sessões presenciais combinadas",
+    ],
+    exclusions: [
+      "Casos de emergência clínica",
+      "Pós-operatórios sem liberação médica",
+    ],
+    documents: ["Documento com foto", "Encaminhamento clínico, se houver"],
+    schedule: "Atendimentos nas tardes de segunda a quinta",
+    vacanciesLabel: "12 vagas imediatas",
+  },
+  {
+    id: 4,
+    slug: "avaliacao-nutricional-ufpe",
+    name: "Avaliação Nutricional",
+    university: "UFPE - Nutrição",
+    area: "Nutrição",
+    costLabel: "Gratuito",
+    costType: "free",
+    status: "open",
+    city: "Recife",
+    state: "PE",
+    location: "Centro Integrado de Nutrição - Recife - PE",
+    modality: "Presencial",
+    shortDescription:
+      "Avaliação e orientação nutricional individual.",
+    description:
+      "Atendimento inicial com avaliação alimentar, contexto social e plano orientativo supervisionado por docentes.",
+    audience: "Adultos e famílias em acompanhamento social",
+    criteria: [
+      "Participar da avaliação presencial inicial",
+      "Levar exames recentes, se possuir",
+    ],
+    exclusions: [
+      "Situações de urgência médica nutricional",
+      "Pessoas impossibilitadas de comparecer às avaliações presenciais",
+    ],
+    documents: ["Documento com foto", "Comprovante de residência"],
+    schedule: "Quartas-feiras, das 8h às 12h",
+    vacanciesLabel: "8 vagas abertas neste mês",
+  },
+  {
+    id: 5,
+    slug: "fonoaudiologia-infantil-unicap",
+    name: "Fonoaudiologia Infantil",
+    university: "Universidade Católica de Pernambuco",
+    area: "Fonoaudiologia",
+    costLabel: "Gratuito",
+    costType: "free",
+    status: "closed",
+    city: "Recife",
+    state: "PE",
+    location: "Clínica-escola de Fonoaudiologia - Recife - PE",
+    modality: "Presencial",
+    shortDescription:
+      "Atendimento fonoaudiológico para crianças de 3 a 12 anos.",
+    description:
+      "Serviço voltado para avaliação e acompanhamento infantil, em ciclos semestrais de inscrições.",
+    audience: "Crianças de 3 a 12 anos com responsável legal",
+    criteria: [
+      "Presença obrigatória do responsável",
+      "Disponibilidade para rotina semanal",
+    ],
+    exclusions: [
+      "Faixa etária fora do recorte do programa",
+      "Ausência de responsável legal no processo de admissão",
+    ],
+    documents: ["Documento da criança", "Documento do responsável", "Comprovante de residência"],
+    schedule: "Turmas definidas por semestre letivo",
+    vacanciesLabel: "Inscrições encerradas no momento",
+  },
+];
+
